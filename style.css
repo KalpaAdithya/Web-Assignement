@@ -1,9 +1,10 @@
-body{background-color: whitesmoke;}
+*{margin: 0; padding: 0;}
+body{background-color: black;}
 #mainSlider{
-  overflow: hidden; height: 500px; width:100%; 
+  overflow: hidden; height: 500px; width:100%;  
 }
 figure{
-  position: relative; width: 500%; margin: 0px; left: 0px; animation: 18s slider infinite; margin-top: 50px;
+  position: relative; width: 500%; margin: 0px; left: 0px; animation: 18s slider infinite; margin-top: 48px;
 }
 #mainSlider figure img{
   width:20%; float:left;
@@ -19,29 +20,61 @@ figure{
   95%{left:-300%;}
   100%{left:-400%;}
 }
-nav{background-color: white; font-size: 15px;width: 100%; height:50px; margin-top: 0; position: fixed;} 
-ul { 
-  list-style-type: none;
+
+nav{background-color: white; font-size: 15px;width: 100%; height:50px; margin-top: 0; position: fixed;z-index: 1;} 
+nav ul { 
+  
   margin: 0;
   padding: 0; 
-  padding-right: 20px;
+  padding-right: 20px; float: right;
   
 }
-li{
+nav ul li{list-style: none; position: relative;
 float:right;}
-li a {
+nav ul li a {
   display: block;
   color: black;
   text-align: right ;
   padding: 17px 16px;
   text-decoration: none;
 }
- .logo{ float:left; object-fit: cover; height:100%; width:100px;}
-
-
-
-li a:hover{
+ .logo{ float:left; object-fit: cover; height:100%; padding: 0px 20px;}
+ nav ul li a:hover{
   color:white; font-style:inherit; background-color:rgb(110, 110, 110);
+}
+
+
+
+
+.dropdown  {
+   
+  
+  margin-left: 0px; margin-right:0px;
+  
+}
+
+.dropdown-content {
+  
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width:250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; 
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 a{
