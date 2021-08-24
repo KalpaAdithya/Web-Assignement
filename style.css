@@ -159,7 +159,7 @@ ul.products
 		}
 		
 ul.products li{
-			display: inline;
+			display: inline-block;
 		}
 
 .next-pre-buttons{
@@ -167,10 +167,11 @@ ul.products li{
 	border: solid white;
 	border-width: 0 10px;
 	border-radius: 0;
-	background: red;
+	background-color:#6F5F90;
 	color: white;
 	font-size: 18px;
 	margin: -60px auto 15px;
 	padding: 15px;
-	position: fixed;
+	position: absolute;
+	display: inline-block;
 }
