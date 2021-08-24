@@ -107,30 +107,40 @@ a{
 .slide-txt{
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	box-sizing: border-box;
-	padding-left: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	background-color: white;
-	height: 60px;
+	height: 160px;
+	display: inline-block;
 }
 
 .item-name a{
 	color:#47005B;
-	margin: 5px 0px;
+	margin: 2px 0px;
 	font-weight: 700;
 	letter-spacing: 0.5px;
-	padding-right: 8px;
+	padding-right: 0px;
+	font-size: 1.1rem;
+	max-width: 100%;
+	white-space: pre-wrap;
+	text-align: left;
+
 }
 
 
 .price{
 	color:#060279;
 	font-weight: 600;
-	font-size: 1.0rem;
+	font-size: 0.9rem;
+	font-weight: 900;
+	text-align: right;
 	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	letter-spacing: 0.5px;
+	align: right;
+	object-position: bottom;
 }
 
 
@@ -141,12 +151,11 @@ a{
 	margin-top: 10px;
 	margin-left: auto;
 	padding: 10px;
-	overflow-x:inherit;
+	overflow-x:visible;
 	overflow-y: hidden;
 	max-width: 100%;
-	-webkit-overflow-scrolling: touch;
 	scroll-behavior: smooth;
-	float: left;
+	flex-wrap: wrap;
 }
 
 
@@ -173,5 +182,6 @@ ul.products li{
 	margin: -60px auto 15px;
 	padding: 15px;
 	position: absolute;
-	display: inline-block;
+	display:inherit;
+	height: 210px;
 }
