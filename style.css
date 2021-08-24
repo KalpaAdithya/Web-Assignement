@@ -88,7 +88,7 @@ a{
 	border-radius: 10px;
 	overflow: hidden;
 	position: relative;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-left: 20px;
 	display: inline-block;
 }
@@ -138,11 +138,39 @@ a{
 	position: relative;
 	max-height: 320px;
 	height: 320px;
-	margin-top: 6px;
+	margin-top: 10px;
 	margin-left: auto;
-	padding-left: 10px;
-	overflow-x: auto;
+	padding: 10px;
+	overflow-x:inherit;
 	overflow-y: hidden;
+	max-width: 100%;
 	-webkit-overflow-scrolling: touch;
 	scroll-behavior: smooth;
+	float: left;
+}
+
+
+ul.products
+		{
+			margin: 0;
+			padding: 0;
+			white-space: nowrap;
+			width: 900px;
+		}
+		
+ul.products li{
+			display: inline;
+		}
+
+.next-pre-buttons{
+	display: block;
+	border: solid white;
+	border-width: 0 10px;
+	border-radius: 0;
+	background: red;
+	color: white;
+	font-size: 18px;
+	margin: -60px auto 15px;
+	padding: 15px;
+	position: fixed;
 }
