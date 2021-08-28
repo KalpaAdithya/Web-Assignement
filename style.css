@@ -86,11 +86,11 @@ a{
 .product-box{
   width: 200px;
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
-	border-radius: 10px;
+	border-radius: 15px;
 	overflow: hidden;
 	position: relative;
 	margin-top: 20px;
-	margin-left: 20px;
+	margin-left: auto;
 	display: inline-block;
 }
 
@@ -107,26 +107,21 @@ a{
 
 .slide-txt{
 	width: 100%;
-	display: flex;
 	align-items: center;
 	box-sizing: border-box;
-	padding-left: 2px;
-	padding-right: 2px;
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	background-color: white;
-	height: 160px;
-	display: inline-block;
+	height: 80px;
+	padding: 10px 5px;
 }
 
 .item-name a{
 	color:#47005B;
-	margin: 2px 0px;
 	font-weight: 700;
 	letter-spacing: 0.5px;
-	padding-right: 0px;
 	font-size: 1.1rem;
 	max-width: 100%;
-	white-space: pre-wrap;
+	white-space:normal;
 	text-align: left;
 
 }
@@ -152,7 +147,7 @@ a{
 	margin-top: 10px;
 	margin-left: auto;
 	padding: 10px;
-	overflow-x:visible;
+	overflow-x:auto;
 	overflow-y: hidden;
 	max-width: 100%;
 	scroll-behavior: smooth;
