@@ -90,8 +90,12 @@ a{
 	overflow: hidden;
 	position: relative;
 	margin-top: 20px;
-	margin-left: 4px;
+	margin-left: 10px;
 	display: inline-block;
+}
+
+#first-pro-box{
+	margin-left: 40px;
 }
 
 .slide-img{
@@ -177,6 +181,7 @@ ul.products li{
 	width: 30px;
 	cursor: pointer;
 	border: none;
+	position: absolute;
 	
 }
 
@@ -184,8 +189,6 @@ ul.products li{
 	
 	border-radius: 0px 5px 5px 0px;
 	float: right;
-	position: absolute;
-	right: 5px;
 	
 }
 
