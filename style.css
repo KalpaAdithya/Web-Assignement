@@ -84,7 +84,7 @@ a{
 
 
 .product-box{
-  	width: 200px;
+  	width: 180px;
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
 	border-radius: 15px;
 	overflow: hidden;
@@ -94,12 +94,16 @@ a{
 	display: inline-block;
 }
 
-#first-pro-box{
-	margin-left: 40px;
+.first-pro-box{
+	margin-left: 50px;
+}
+
+.last-pro-box{
+	margin-right: 50px;
 }
 
 .slide-img{
-	height:150px;
+	height:140px;
 	position: relative;
 }
 
@@ -123,7 +127,7 @@ a{
 	color:#47005B;
 	font-weight: 700;
 	letter-spacing: 0.5px;
-	font-size: 1.1rem;
+	font-size: 0.9rem;
 	max-width: 100%;
 	white-space:normal;
 	text-align: left;
@@ -144,26 +148,29 @@ a{
 
 .div-wrapper{
 	position: relative;
-	max-height: 320px;
+	width: 100%;
 	height: 320px;
 	margin: 20px 10px;
-	overflow: auto;
-	outline: none;
-	overflow-y: hidden;
-	-ms-overflow-style: scroll;
-	scrollbar-width:none;
 }
 
-.div-wrapper::-webkit-scrollbar{
-	display: none;
-}
 
 
 ul.products
 		{
-			white-space: nowrap;
-			list-style-type: none;
+	white-space: nowrap;
+	width: 100%;
+	list-style-type: none;	
+	overflow: scroll;
+	outline: none;
+	overflow-y: hidden;
+	overflow-x: auto;
+	-ms-overflow-style: scroll;
+	scrollbar-width:none;
 		}
+
+ul.products::-webkit-scrollbar{
+	display: none;
+}
 		
 ul.products li{
 			display: inline-block;
@@ -174,28 +181,29 @@ ul.products li{
 	background-color:#3D3D3D;
 	color: white;
 	font-size: 30px;
-	margin: -230px 5px;
+	margin: -220px 5px;
 	padding-left: 5px;
 	padding-right: 5px;
-	height: 230px;
+	height: 220px;
 	width: 30px;
 	cursor: pointer;
 	border: none;
 	position: absolute;
+	z-index: 1;
 	
 }
 
 .next{
 	
 	border-radius: 0px 5px 5px 0px;
-	float: right;
+	right: 5px;
 	
 }
 
 .pre{
 	
 	border-radius: 5px 0px 0px 5px;
-	float: left;
+	left: 5px;
 }
 
 .next-pre-buttons:active{
