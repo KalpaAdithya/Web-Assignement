@@ -83,13 +83,13 @@ a{
 
 
 .product-box{
-  width: 200px;
+  	width: 200px;
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
 	border-radius: 15px;
 	overflow: hidden;
 	position: relative;
 	margin-top: 20px;
-	margin-left: auto;
+	margin-left: 4px;
 	display: inline-block;
 }
 
@@ -101,7 +101,7 @@ a{
 .slide-img img{
 	width: 100%;
 	height: 100%;
-	object-fit:fill;
+	object-fit: fill;
 }
 
 .slide-txt{
@@ -111,7 +111,7 @@ a{
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	background-color: white;
 	height: 80px;
-	padding: 10px 5px;
+	padding: 10px;
 }
 
 .item-name a{
@@ -131,11 +131,9 @@ a{
 	font-weight: 600;
 	font-size: 0.9rem;
 	font-weight: 900;
-	text-align: right;
 	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	letter-spacing: 0.5px;
-	align: right;
-	object-position: bottom;
+	position: absolute; bottom:10px; right: 10px;
 }
 
 
@@ -143,23 +141,23 @@ a{
 	position: relative;
 	max-height: 320px;
 	height: 320px;
-	margin-top: 10px;
-	margin-left: auto;
-	padding: 10px;
-	overflow-x:auto;
+	margin: 20px 10px;
+	overflow: auto;
+	outline: none;
 	overflow-y: hidden;
-	max-width: 100%;
-	scroll-behavior: smooth;
-	flex-wrap: wrap;
+	-ms-overflow-style: scroll;
+	scrollbar-width:none;
+}
+
+.div-wrapper::-webkit-scrollbar{
+	display: none;
 }
 
 
 ul.products
 		{
-			margin: 0;
-			padding: 0;
 			white-space: nowrap;
-			width: 900px;
+			list-style-type: none;
 		}
 		
 ul.products li{
@@ -167,16 +165,35 @@ ul.products li{
 		}
 
 .next-pre-buttons{
-	display: block;
-	border: solid white;
-	border-width: 0 10px;
-	border-radius: 0;
-	background-color:#6F5F90;
+	display:inline-block;
+	background-color:#3D3D3D;
 	color: white;
-	font-size: 18px;
-	margin: -60px auto 15px;
-	padding: 15px;
+	font-size: 30px;
+	margin: -230px 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 230px;
+	width: 30px;
+	cursor: pointer;
+	border: none;
+	
+}
+
+.next{
+	
+	border-radius: 0px 5px 5px 0px;
+	float: right;
 	position: absolute;
-	display:inherit;
-	height: 210px;
+	right: 5px;
+	
+}
+
+.pre{
+	
+	border-radius: 5px 0px 0px 5px;
+	float: left;
+}
+
+.next-pre-buttons:active{
+	background-color: #370450;
 }
