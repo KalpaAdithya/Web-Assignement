@@ -21,32 +21,33 @@ figure{
   100%{left:-400%;}
 }
 
-nav{background-color: white; font-size: 15px;width: 100%; height:50px; margin-top: 0; position: fixed;z-index: 1;} 
+
+nav{background-color: white; font-size: 15px;width: 100%; height:50px; margin-top: 0; position: fixed;z-index:1;} 
 nav ul { 
-  
+  display: flex;
   margin: 0;
   padding: 0; 
-  padding-right: 20px; float: right;
+  padding-right: 20px; justify-content: center;
   
 }
-nav ul li{list-style: none; position: relative;
+nav ul li{list-style: none; position:relative; 
 float:right;}
 nav ul li a {
-  display: block;
+  display: inline-block;
   color: black;
-  text-align: right ;
+   
   padding: 17px 16px;
   text-decoration: none;
 }
- .logo{ float:left; object-fit: cover; height:100%; padding: 0px 20px;}
+ 
  nav ul li a:hover{
   color:white; font-style:inherit; background-color:rgb(110, 110, 110);
 }
 
 
+.logo{ float:left; object-fit: cover; height:100%; padding-left: 0;}
 
-
-.dropdown  {
+nav ul li  {
    
   
   margin-left: 0px; margin-right:0px;
@@ -73,7 +74,7 @@ nav ul li a {
   text-align: left; 
 }
 
-.dropdown:hover .dropdown-content {
+ li:hover .dropdown-content {
   display: block;
 }
 
