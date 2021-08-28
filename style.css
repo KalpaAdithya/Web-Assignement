@@ -152,6 +152,7 @@ a{
 	overflow: auto;
 	outline: none;
 	overflow-y: hidden;
+	overflow-x: hidden;
 	-ms-overflow-style: scroll;
 	white-space: nowrap;
 }
