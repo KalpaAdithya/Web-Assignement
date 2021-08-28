@@ -11,6 +11,18 @@
 	
 	<!--product-carousel-js-link------>
 	<script src="../../product_carousel.js"></script>
+	
+	<script language="javascript">
+		
+	function next_btn()
+{
+	document.getElementsByClassName('products').scrollLeft += 10;
+}
+			function pre_btn()
+{
+	document.getElementsByClassName('products').scrollLeft -= 10;
+}
+	</script>
     
 </head>
 <body>
@@ -96,7 +108,7 @@
 			
 			<li>
         <!--slider1----------->
-        <div class="product-box" id="first-pro-box">
+        <div class="product-box first-pro-box">
             <a href="#">
         
             <!---image------------->
@@ -289,7 +301,7 @@
 			
 			<li>
         <!--slider7----------->
-        <div class="product-box">
+        <div class="product-box last-pro-box">
             <a href="#">
         
             <!---image------------->
@@ -319,7 +331,7 @@
         </div>
 			</li>
 			<li>	
-		<input type="button" id="btnright" class="next-pre-buttons next" value="&#8250;">
+		<input type="button" id="btnright" class="next-pre-buttons next" value="&#8250;" onClick="next_btn();">
 			</li>
 		</ul>
 			</div>
