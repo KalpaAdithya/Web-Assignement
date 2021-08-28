@@ -82,6 +82,11 @@ a{
 	text-decoration: none;
 }
 
+.catogory-headings{
+	height: 40px;
+	margin: 10px 30px;
+	padding: 5px;
+}
 
 .product-box{
   	width: 180px;
@@ -90,7 +95,7 @@ a{
 	overflow: hidden;
 	position: relative;
 	margin-top: 20px;
-	margin-left: 10px;
+	margin-left: 4px;
 	display: inline-block;
 }
 
@@ -146,7 +151,7 @@ a{
 }
 
 
-.div-wrapper{
+.span-wrapper{
 	position: relative;
 	width: 100%;
 	height: 320px;
@@ -169,15 +174,17 @@ ul.products
 		}
 
 ul.products::-webkit-scrollbar{
+
 	display: none;
 }
 		
 ul.products li{
-			display: inline-block;
+	display: inline-block;
+	white-space: nowrap;
+	list-style-type: none;
 		}
 
 .next-pre-buttons{
-	display:inline-block;
 	background-color:#3D3D3D;
 	color: white;
 	font-size: 30px;
@@ -197,7 +204,6 @@ ul.products li{
 	
 	border-radius: 0px 5px 5px 0px;
 	right: 5px;
-	
 }
 
 .pre{
